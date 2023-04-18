@@ -2,15 +2,17 @@
 import Left from './left.vue'
 import Center from './center.vue'
 import Right from './right.vue'
-// Data
-import { placeholderList, hotWordsListData } from '../../data/header'
+import {
+  placeholderList as phList,
+  hotWordsList as hwList
+} from '../../data/header'
 </script>
 
 <template>
   <header>
     <div class='container block-center'>
       <Left url='#' />
-      <Center :placeholderList='placeholderList' :hotWordsList='hotWordsListData' />
+      <Center :placeholderList='phList' :hotWordsList='hwList' />
       <Right />
     </div>
   </header>

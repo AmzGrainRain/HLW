@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import Split from './components/split.vue'
+import Split from './components/common/split.vue'
 import TopBanner from './components/top-banner.vue'
 import TopNav from './components/top-nav.vue'
 import Header from './components/header/index.vue'
@@ -11,7 +11,9 @@ import Scene from './components/scene.vue'
 import SceneTransverse from './components/scene-transverse.vue'
 import FloorBox from './components/floor-box/index.vue'
 
-// Data
+/**
+ * Components Data
+ */
 import { sceneData } from './data/scene'
 import { sceneTransverseData } from './data/scene-transverse'
 import { carouselData } from './data/carousel'
@@ -34,17 +36,17 @@ import { floorBoxData } from './data/floor-box'
   <Split height='16px' />
 
   <!-- Scene Box -->
-  <Scene :data='sceneData' />
+  <Scene :listData='sceneData' />
   <Split height='30px' />
 
   <!-- Scene Box (Transverse) -->
-  <SceneTransverse :data='sceneTransverseData' />
+  <SceneTransverse :listData='sceneTransverseData' />
   <Split height='60px' />
 
-  <!-- Floor Box A -->
-  <section class='floor-box' v-for='(floorItem, index) in floorBoxData'>
+  <!-- Floor Box -->
+  <section class='floor-box' v-for='(item, i) in floorBoxData' :key='i'>
     <Split height='30px' />
-    <FloorBox :data='floorItem' />
+    <FloorBox :data='item' />
     <Split height='60px' />
   </section>
 </template>

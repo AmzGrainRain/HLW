@@ -1,12 +1,11 @@
 <script lang='ts' setup>
-import Icons from '../icons.vue'
 import { ref } from 'vue'
-// Types
-import { HotWordsListType } from '../../types/header'
+import Icons from '../common/icons.vue'
+import { HotWordsList, PlaceholderList } from '../../types/header'
 
 const props = defineProps<{
-  readonly placeholderList: string[]
-  readonly hotWordsList: HotWordsListType[]
+  readonly placeholderList: PlaceholderList
+  readonly hotWordsList: HotWordsList
 }>()
 
 let index = ref(0)

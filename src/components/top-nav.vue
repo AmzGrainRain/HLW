@@ -1,5 +1,5 @@
 <script lang='ts' setup>
-import Icon from './icons.vue'
+import Icon from './common/icons.vue'
 </script>
 
 <template>
@@ -71,8 +71,8 @@ import Icon from './icons.vue'
 <style lang='stylus' scoped>
 nav
   font-size 12px
-  color #71797F
-  background-color #F3F5F7
+  color #71797f
+  background-color #f3f5f7
   box-sizing border-box
 
   & > div
@@ -116,9 +116,10 @@ nav
       display none
       position absolute
       left 0
+      color #71797f
       padding-bottom 4px
       background-color #fff
-      border 1px solid #E9ECF0
+      border 1px solid #e9ecf0
       border-top-color #0000
 
       li

@@ -1,15 +1,15 @@
 <script lang='ts' setup>
 import { assumeFile } from '../utils'
-import { DataType } from '../types/scene-transverse'
+import { ListData } from '../types/scene-transverse'
 
-defineProps<{ readonly data: DataType[] }>()
+defineProps<{ readonly listData: ListData }>()
 </script>
 
 <template>
   <ul class='block-center'>
-    <li v-for='(item, i) in data' :key='i'>
+    <li v-for='(item, i) in listData' :key='i'>
       <a :href='item.url'>
-        <img :src='assumeFile(item.image)' :alt='item.alt'>
+        <img :src='assumeFile(item.image) as string' :alt='item.alt'>
       </a>
     </li>
   </ul>

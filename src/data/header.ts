@@ -1,4 +1,4 @@
-import { HotWordsListType } from '../types/header'
+import { Link } from '../types/common'
 
 const placeholderList: string[] = [
   '心之和蛋糕',
@@ -13,7 +13,7 @@ const placeholderList: string[] = [
   '粉色绣球'
 ]
 
-const hotWordsListData: HotWordsListType[] = [
+const hotWordsList: Link[] = [
   { text: '红玫瑰', url: '#' },
   { text: '永生花', url: '#' },
   { text: '生日鲜花', url: '#' },
@@ -22,5 +22,5 @@ const hotWordsListData: HotWordsListType[] = [
 
 export {
   placeholderList,
-  hotWordsListData
+  hotWordsList
 }

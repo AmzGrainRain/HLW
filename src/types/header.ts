@@ -1,7 +1,9 @@
 import { Link } from './common'
 
-type HotWordsListType = Link
+type PlaceholderList = string[]
+type HotWordsList = Link[]
 
 export type {
-  HotWordsListType
+  PlaceholderList,
+  HotWordsList
 }

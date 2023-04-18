@@ -1,7 +1,7 @@
 import { ImageLink } from './common'
 
-type DataType = ImageLink;
+type ListData = ImageLink[]
 
 export type {
-  DataType
+  ListData
 }

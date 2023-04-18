@@ -68,77 +68,63 @@ span
 </style>
 
 <style lang='stylus' scoped>
+span
+  background-image url('../../assets/icons/icons.png')
+
 .favorite
   background-position 0 -21px
-  background-image url('../assets/icons/icons.png')
 
 .search
   background-position 0 -48px
-  background-image url('../assets/icons/icons.png')
 
 .wechat
   background-position -24px -21px
-  background-image url('../assets/icons/icons.png')
 
 .mobile-app
   background-position -48px -21px
-  background-image url('../assets/icons/icons.png')
 
 .telephone
   background-position 0 -102px
-  background-image url('../assets/icons/icons.png')
 
 .headset
   background-position -34px -102px
-  background-image url('../assets/icons/icons.png')
 
 .arrow
-  background-image url('../assets/icons/top_nav_arrow.png')
+  background-image url('../../assets/icons/top_nav_arrow.png') !important
 
 .arrow-right
   background-position -44px 0
-  background-image url('../assets/icons/icons.png')
 
 .arrow-right-dark
   background-position -72px 0
-  background-image url('../assets/icons/icons.png')
 
 .arrow-right-dashed
   background-position 0 -72px
-  background-image url('../assets/icons/icons.png')
 
 .menu
   background-position -68px -102px
-  background-image url('../assets/icons/icons.png')
 
 .carousel-left
   background-position 0 -186px
-  background-image url('../assets/icons/icons.png')
 
 .carousel-right
   background-position -62px -186px
-  background-image url('../assets/icons/icons.png')
 
 .main-server-0
   background-position -102px -102px
-  background-image url('../assets/icons/icons.png')
 
 .main-server-1
   background-position -136px -102px
-  background-image url('../assets/icons/icons.png')
 
 .main-server-2
   background-position -204px -102px
-  background-image url('../assets/icons/icons.png')
 
 .main-server-3
   background-position -238px -102px
-  background-image url('../assets/icons/icons.png')
 
 .main-server-4
   background-position -170px -102px
-  background-image url('../assets/icons/icons.png')
 
 .customer
-  background url('../assets/icons/icon-mq-round@2x.png') 0px -3px / 64px no-repeat
+  background url('../../assets/icons/icon-mq-round@2x.png') 0px -3px / 64px no-repeat
 </style>

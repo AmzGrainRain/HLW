@@ -1,8 +1,8 @@
 <script lang='ts' setup>
 // Types
-import { NavListType } from '../../types/navigation-bar'
+import { Navigation } from '../../types/navigation-bar'
 
-defineProps<{ readonly navList: NavListType[] }>()
+defineProps<{ readonly navList: Navigation[] }>()
 </script>
 
 <template>

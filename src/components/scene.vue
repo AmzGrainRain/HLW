@@ -1,20 +1,20 @@
 <script lang='ts' setup>
 import { assumeFile } from '../utils'
-import { DataType } from '../types/scene'
+import { ListData } from '../types/scene'
 
-defineProps<{ readonly data: DataType[] }>()
+defineProps<{ readonly listData: ListData }>()
 </script>
 
 <template>
   <ul class='block-center'>
-    <li v-for='(type, tIndex) in data' :key='tIndex' :class='[ type.cardStyle ]'>
+    <li v-for='(type, tIndex) in listData' :key='tIndex' :class='[ type.cardStyle ]'>
       <a
         v-if='type.cardStyle === "one" || type.cardStyle === "two"'
         v-for='(item, iIndex) in type.itemList'
         :href='item.url'
         :key='iIndex'
       >
-        <img :src='assumeFile(item.image)' :alt='item.alt'>
+        <img :src='assumeFile(item.image) as string' :alt='item.alt'>
       </a>
 
       <div v-if='type.cardStyle === "three"'>
@@ -23,7 +23,7 @@ defineProps<{ readonly data: DataType[] }>()
           :href='item.url'
           :key='iIndex'
         >
-          <img :src='assumeFile(item.image)' :alt='item.alt'>
+          <img :src='assumeFile(item.image) as string' :alt='item.alt'>
         </a>
       </div>
       <a
@@ -31,7 +31,7 @@ defineProps<{ readonly data: DataType[] }>()
         :href='item.url'
         :key='iIndex'
       >
-        <img :src='assumeFile(item.image)' :alt='item.alt'>
+        <img :src='assumeFile(item.image) as string' :alt='item.alt'>
       </a>
     </li>
   </ul>

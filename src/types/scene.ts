@@ -1,10 +1,10 @@
 import { ImageLink } from './common'
 
-interface DataType {
+type ListData = {
   cardStyle: string
   itemList: ImageLink[]
-}
+}[]
 
 export type {
-  DataType
+  ListData
 }

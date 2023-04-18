@@ -1,10 +1,9 @@
 <script lang='ts' setup>
 import Group from './group.vue'
-import Icons from '../icons.vue'
-// Types
-import { GroupDataType } from '../../types/navigation-bar'
+import Icons from '../common/icons.vue'
+import { Category } from '../../types/navigation-bar'
 
-defineProps<{ readonly groupDataList: GroupDataType[] }>()
+defineProps<{ readonly groupDataList: Category[] }>()
 </script>
 
 <template>

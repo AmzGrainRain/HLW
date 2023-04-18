@@ -1,12 +1,12 @@
 <script lang='ts' setup>
 import { ref } from 'vue'
 import { assumeFile } from '../utils'
-import Icons from './icons.vue'
-import { CarouselDataType } from '../types/carousel'
+import Icons from './common/icons.vue'
+import { Image, PicPerSec } from '../types/carousel'
 
 interface Props {
-  readonly imageList: CarouselDataType[]
-  readonly picPerSec?: number
+  readonly imageList: Image[]
+  readonly picPerSec?: PicPerSec
 }
 const props = withDefaults(defineProps<Props>(), {
   picPerSec: 5

@@ -1,13 +1,18 @@
 import { Link, ImageTextLink } from './common'
 
-type NavListType = Link
+type Navigation = Link
 
-interface GroupDataType {
+interface ExtendImageTextLink extends ImageTextLink {
+  readonly imageWidth: string
+  readonly imageHeight: string
+}
+
+interface Category {
   readonly title: Link
   readonly links: Link[]
   additional: {
     title: string
-    list: ImageTextLink[]
+    list: ExtendImageTextLink[]
   }[]
   cities: {
     title: string
@@ -16,6 +21,6 @@ interface GroupDataType {
 }
 
 export type {
-  NavListType,
-  GroupDataType
+  Navigation,
+  Category
 }

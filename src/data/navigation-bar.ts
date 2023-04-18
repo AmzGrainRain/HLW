@@ -1,6 +1,6 @@
-import { NavListType, GroupDataType } from '../types/navigation-bar'
+import { Navigation, Category } from '../types/navigation-bar'
 
-const navList: Array<NavListType> = [
+const navigation: Array<Navigation> = [
   { text: '鲜花', url: '#' },
   { text: '永生花', url: '#' },
   { text: '蛋糕', url: '#' },
@@ -11,7 +11,7 @@ const navList: Array<NavListType> = [
   { text: '设计师甄选鲜花', url: '#' }
 ]
 
-const categoryGroupData: Array<GroupDataType> = [
+const category: Array<Category> = [
   {
     title: { text: '鲜花用途', url: '#' },
     links: [
@@ -56,26 +56,34 @@ const categoryGroupData: Array<GroupDataType> = [
           {
             text: '永生瓶花',
             url: '#',
-            image: 'assets/navigation-bar/eternal-flower/type/01.png',
-            alt: '永生瓶花'
+            image: 'navigation-bar/eternal-flower/type/01.png',
+            alt: '永生瓶花',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '经典花盒',
             url: '#',
-            image: 'assets/navigation-bar/eternal-flower/type/02.png',
-            alt: '经典花盒'
+            image: 'navigation-bar/eternal-flower/type/02.png',
+            alt: '经典花盒',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '特色永生花',
             url: '#',
-            image: 'assets/navigation-bar/eternal-flower/type/03.png',
-            alt: '特色永生花'
+            image: 'navigation-bar/eternal-flower/type/03.png',
+            alt: '特色永生花',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '巨型玫瑰',
             url: '#',
-            image: 'assets/navigation-bar/eternal-flower/type/04.png',
-            alt: '巨型玫瑰'
+            image: 'navigation-bar/eternal-flower/type/04.png',
+            alt: '巨型玫瑰',
+            imageWidth: '68px',
+            imageHeight: '68px'
           }
         ]
       },
@@ -85,26 +93,34 @@ const categoryGroupData: Array<GroupDataType> = [
           {
             text: '送女友',
             url: '#',
-            image: 'assets/navigation-bar/eternal-flower/object/01.png',
-            alt: ''
+            image: 'navigation-bar/eternal-flower/object/01.png',
+            alt: '送女友',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '送男友',
             url: '#',
-            image: 'assets/navigation-bar/eternal-flower/object/02.png',
-            alt: '送男友'
+            image: 'navigation-bar/eternal-flower/object/02.png',
+            alt: '送男友',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '送长辈',
             url: '#',
-            image: 'assets/navigation-bar/eternal-flower/object/03.png',
-            alt: '送长辈'
+            image: 'navigation-bar/eternal-flower/object/03.png',
+            alt: '送长辈',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '送朋友',
             url: '#',
-            image: 'assets/navigation-bar/eternal-flower/object/04.png',
-            alt: '送朋友'
+            image: 'navigation-bar/eternal-flower/object/04.png',
+            alt: '送朋友',
+            imageWidth: '68px',
+            imageHeight: '68px'
           }
         ]
       }
@@ -125,25 +141,158 @@ const categoryGroupData: Array<GroupDataType> = [
       {
         title: '蛋糕品牌',
         list: [
-          { text: '幸福西饼蛋糕', url: '#', image: 'assets/navigation-bar/cake/01.png', alt: '幸福西饼蛋糕' },
-          { text: '元祖蛋糕', url: '#', image: 'assets/navigation-bar/cake/02.png', alt: '元祖蛋糕' },
-          { text: '诺心蛋糕', url: '#', image: 'assets/navigation-bar/cake/03.png', alt: '诺心蛋糕' },
-          { text: 'cakeboss蛋糕', url: '#', image: 'assets/navigation-bar/cake/04.png', alt: 'cakeboss蛋糕' },
-          { text: '21CAKE蛋糕', url: '#', image: 'assets/navigation-bar/cake/05.png', alt: '21CAKE蛋糕' },
-          { text: 'FALANCCAKE蛋糕', url: '#', image: 'assets/navigation-bar/cake/06.png', alt: 'FALANCCAKE蛋糕' },
-          { text: 'BeDream蛋糕', url: '#', image: 'assets/navigation-bar/cake/07.png', alt: 'BeDream蛋糕' },
-          { text: '窝夫小子蛋糕', url: '#', image: 'assets/navigation-bar/cake/08.png', alt: '窝夫小子蛋糕' },
-          { text: '派悦坊蛋糕', url: '#', image: 'assets/navigation-bar/cake/09.png', alt: '派悦坊蛋糕' },
-          { text: 'Mcake蛋糕', url: '#', image: 'assets/navigation-bar/cake/10.png', alt: 'Mcake蛋糕' },
-          { text: '巴黎贝甜蛋糕', url: '#', image: 'assets/navigation-bar/cake/11.png', alt: '巴黎贝甜蛋糕' },
-          { text: '心之和蛋糕', url: '#', image: 'assets/navigation-bar/cake/12.png', alt: '心之和蛋糕' },
-          { text: '米卡米蛋糕', url: '#', image: 'assets/navigation-bar/cake/13.png', alt: '米卡米蛋糕' },
-          { text: '四季榴莲蛋糕', url: '#', image: 'assets/navigation-bar/cake/14.png', alt: '四季榴莲蛋糕' },
-          { text: 'Vcake蛋糕', url: '#', image: 'assets/navigation-bar/cake/15.png', alt: 'Vcake蛋糕' },
-          { text: 'cakeonly专爱蛋糕', url: '#', image: 'assets/navigation-bar/cake/16.png', alt: 'cakeonly专爱蛋糕' },
-          { text: '哈根达斯蛋糕', url: '#', image: 'assets/navigation-bar/cake/17.png', alt: '哈根达斯蛋糕' },
-          { text: '全国蛋糕', url: '#', image: 'assets/navigation-bar/cake/18.png', alt: '全国蛋糕' },
-          { text: '意然蛋糕', url: '#', image: 'assets/navigation-bar/cake/19.png', alt: '意然蛋糕' }
+          {
+            text: '幸福西饼蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/01.png',
+            alt: '幸福西饼蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: '元祖蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/02.png',
+            alt: '元祖蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: '诺心蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/03.png',
+            alt: '诺心蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: 'cakeboss蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/04.png',
+            alt: 'cakeboss蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: '21CAKE蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/05.png',
+            alt: '21CAKE蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: 'FALANCCAKE蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/06.png',
+            alt: 'FALANCCAKE蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: 'BeDream蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/07.png',
+            alt: 'BeDream蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: '窝夫小子蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/08.png',
+            alt: '窝夫小子蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: '派悦坊蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/09.png',
+            alt: '派悦坊蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: 'Mcake蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/10.png',
+            alt: 'Mcake蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: '巴黎贝甜蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/11.png',
+            alt: '巴黎贝甜蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: '心之和蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/12.png',
+            alt: '心之和蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: '米卡米蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/13.png',
+            alt: '米卡米蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: '四季榴莲蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/14.png',
+            alt: '四季榴莲蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: 'Vcake蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/15.png',
+            alt: 'Vcake蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: 'cakeonly专爱蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/16.png',
+            alt: 'cakeonly专爱蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: '哈根达斯蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/17.png',
+            alt: '哈根达斯蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: '全国蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/18.png',
+            alt: '全国蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          },
+          {
+            text: '意然蛋糕',
+            url: '#',
+            image: 'navigation-bar/cake/19.png',
+            alt: '意然蛋糕',
+            imageWidth: '108px',
+            imageHeight: '60px'
+          }
         ]
       }
     ],
@@ -204,32 +353,42 @@ const categoryGroupData: Array<GroupDataType> = [
           {
             text: '施华洛士奇',
             url: '#',
-            image: 'assets/navigation-bar/other/brand/01.png',
-            alt: '施华洛士奇'
+            image: 'navigation-bar/other/brand/01.png',
+            alt: '施华洛士奇',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: 'Glam Ever潮牌饰品',
             url: '#',
-            image: 'assets/navigation-bar/other/brand/02.png',
-            alt: 'Glam Ever潮牌饰品'
+            image: 'navigation-bar/other/brand/02.png',
+            alt: 'Glam Ever潮牌饰品',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '迪奥Dior',
             url: '#',
-            image: 'assets/navigation-bar/other/brand/03.png',
-            alt: '迪奥Dior'
+            image: 'navigation-bar/other/brand/03.png',
+            alt: '迪奥Dior',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '猫王收音机',
             url: '#',
-            image: 'assets/navigation-bar/other/brand/04.png',
-            alt: '猫王收音机'
+            image: 'navigation-bar/other/brand/04.png',
+            alt: '猫王收音机',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: 'Hello Kitty',
             url: '#',
-            image: 'assets/navigation-bar/other/brand/05.png',
-            alt: 'Hello Kitty'
+            image: 'navigation-bar/other/brand/05.png',
+            alt: 'Hello Kitty',
+            imageWidth: '68px',
+            imageHeight: '68px'
           }
         ]
       },
@@ -239,68 +398,90 @@ const categoryGroupData: Array<GroupDataType> = [
           {
             text: '音乐盒',
             url: '#',
-            image: 'assets/navigation-bar/other/type/01.png',
-            alt: '音乐盒'
+            image: 'navigation-bar/other/type/01.png',
+            alt: '音乐盒',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '金箔花',
             url: '#',
-            image: 'assets/navigation-bar/other/type/02.png',
-            alt: '金箔花'
+            image: 'navigation-bar/other/type/02.png',
+            alt: '金箔花',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '3D水晶内雕',
             url: '#',
-            image: 'assets/navigation-bar/other/type/03.png',
-            alt: '3D水晶内雕'
+            image: 'navigation-bar/other/type/03.png',
+            alt: '3D水晶内雕',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '首饰/美妆',
             url: '#',
-            image: 'assets/navigation-bar/other/type/04.png',
-            alt: '首饰/美妆'
+            image: 'navigation-bar/other/type/04.png',
+            alt: '首饰/美妆',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '巧克力',
             url: '#',
-            image: 'assets/navigation-bar/other/type/05.png',
-            alt: '巧克力'
+            image: 'navigation-bar/other/type/05.png',
+            alt: '巧克力',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '公仔/睡枕',
             url: '#',
-            image: 'assets/navigation-bar/other/type/06.png',
-            alt: '公仔/睡枕'
+            image: 'navigation-bar/other/type/06.png',
+            alt: '公仔/睡枕',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '摆件/其他',
             url: '#',
-            image: 'assets/navigation-bar/other/type/07.png',
-            alt: '摆件/其他'
+            image: 'navigation-bar/other/type/07.png',
+            alt: '摆件/其他',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '绿色植物',
             url: '#',
-            image: 'assets/navigation-bar/other/type/08.png',
-            alt: '绿色植物'
+            image: 'navigation-bar/other/type/08.png',
+            alt: '绿色植物',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '盆栽花卉',
             url: '#',
-            image: 'assets/navigation-bar/other/type/09.png',
-            alt: '盆栽花卉'
+            image: 'navigation-bar/other/type/09.png',
+            alt: '盆栽花卉',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '多肉植物盆栽',
             url: '#',
-            image: 'assets/navigation-bar/other/type/10.png',
-            alt: '多肉植物盆栽'
+            image: 'navigation-bar/other/type/10.png',
+            alt: '多肉植物盆栽',
+            imageWidth: '68px',
+            imageHeight: '68px'
           },
           {
             text: '蓝牙音箱',
             url: '#',
-            image: 'assets/navigation-bar/other/type/11.png',
-            alt: '蓝牙音箱'
+            image: 'navigation-bar/other/type/11.png',
+            alt: '蓝牙音箱',
+            imageWidth: '68px',
+            imageHeight: '68px'
           }
         ]
       }
@@ -310,6 +491,6 @@ const categoryGroupData: Array<GroupDataType> = [
 ]
 
 export {
-  navList,
-  categoryGroupData
+  navigation,
+  category
 }

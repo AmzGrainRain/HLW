@@ -1,10 +1,9 @@
 <script setup lang='ts'>
-import Icons from '../icons.vue'
-import { assumeFile } from '../../utils'
-// Types
-import { GroupDataType } from '../../types/navigation-bar'
+import Icons from '../common/icons.vue'
+import Card from '../common/card/small.vue'
+import { Category } from '../../types/navigation-bar'
 
-defineProps<{ readonly data: GroupDataType }>()
+defineProps<{ readonly data: Category }>()
 </script>
 
 <template>
@@ -22,10 +21,16 @@ defineProps<{ readonly data: GroupDataType }>()
         <p class='title'>{{ group.title }}</p>
         <ul class='item-list'>
           <li v-for='(item, iIndex) in group.list' :key='iIndex'>
-            <a :href='item.url'>
-              <img :src='assumeFile(item.image) as string' :alt='item.alt'>
-              <span>{{ item.alt }}</span>
-            </a>
+            <Card
+              :data='{
+                url: item.url,
+                image: item.image,
+                text: item.text,
+                alt: item.alt
+              }'
+              :imageWidth='item.imageWidth'
+              :imggeHeight='item.imageHeight'
+            />
           </li>
         </ul>
       </div>
@@ -111,21 +116,6 @@ div.group
 
           &:last-child
             margin-bottom 0
-
-          a
-            display flex
-            flex-direction column
-            justify-content center
-            align-items center
-            transition .2s
-
-            &:hover
-              color #FF734C
-
-            img
-              padding-bottom 4px
-              display block
-              width 100%
 
       ul.cities-list li
         margin-right 10px !important

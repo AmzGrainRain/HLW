@@ -1,22 +1,23 @@
 import { Link, ImageTextLink } from './common'
 
-interface ProductType {
+interface Product {
   image: string
   title: string
   tag: string
   price: string
   selled: string
+  url: string
 }
 
-interface DataType{
+interface Data {
   title: Link
   description: string
   more: Link
   banner: ImageTextLink
-  list: ProductType[]
+  list: Product[]
 }
 
 export type {
-  ProductType,
-  DataType
+  Product,
+  Data
 }
