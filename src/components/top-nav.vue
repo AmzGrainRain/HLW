@@ -14,7 +14,7 @@ import Icon from './common/icons.vue'
           <Icon offset-y='1px' icon='wechat' />
           <a href='#'>关注微信</a>
           <div class='dropdown-box'>
-            <img src='../assets/top-nav/follow_wechat.png' alt='follow_wechat'>
+            <img src='../assets/follow_wechat.png' alt='follow_wechat'>
             <span>扫码关注</span>
             <span>回复“礼物”更多惊喜！</span>
           </div>
@@ -23,7 +23,7 @@ import Icon from './common/icons.vue'
           <Icon offset-y='1px' icon='mobile-app' />
           <a href='#'>花礼网app</a>
           <div class='dropdown-box'>
-            <img src='../assets/top-nav/app.png' alt='follow_wechat'>
+            <img src='../assets/app.png' alt='follow_wechat'>
             <span>扫码关注</span>
           </div>
         </li>

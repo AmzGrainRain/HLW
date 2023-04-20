@@ -1,5 +1,5 @@
 w<template>
-  <div></div>
+  <div id='com-top-banner'></div>
 </template>
 
 <style lang="stylus" scoped>

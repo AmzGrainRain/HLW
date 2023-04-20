@@ -1,4 +1,4 @@
-import { Link, ImageTextLink } from './common'
+import { Link, ImageTextLink } from '../common'
 
 interface Product {
   image: string
@@ -9,7 +9,7 @@ interface Product {
   url: string
 }
 
-interface Data {
+interface DataType {
   title: Link
   description: string
   more: Link
@@ -19,5 +19,5 @@ interface Data {
 
 export type {
   Product,
-  Data
+  DataType
 }

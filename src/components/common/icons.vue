@@ -3,73 +3,74 @@ import { StyleValue } from 'vue'
 
 interface Props {
   readonly size?: number
+  readonly customSize?: boolean
+  readonly width?: number
+  readonly height?: number
   readonly icon: string
   readonly floatDirection?: string
   readonly offsetX?: string
   readonly offsetY?: string
+  readonly margin?: string
 }
 
 withDefaults(defineProps<Props>(), {
   size: 14,
+  customSize: false,
+  width: 0,
+  height: 0,
   floatDirection: '',
-  offsetX: '0px',
-  offsetY: '0px'
+  offsetX: '0',
+  offsetY: '0',
+  margin: '0'
 })
 </script>
 
 <template>
   <span
-    :class='[
-      `size-${size}`,
-      icon
-    ]'
+    v-if='!customSize'
+    :class='[ icon ]'
     :style='{
       transform: `translate(${offsetX}, ${offsetY})`,
-      float: `${floatDirection !== "" ? floatDirection : ""}`
+      float: `${floatDirection !== "" ? floatDirection : ""}`,
+      "--margin": margin,
+      "--width": `${size}px`,
+      "--height": `${size}px`
+    } as StyleValue'
+  ></span>
+
+  <span
+    v-else
+    :class='[ icon ]'
+    :style='{
+      transform: `translate(${offsetX}, ${offsetY})`,
+      float: `${floatDirection !== "" ? floatDirection : ""}`,
+      "--margin": margin,
+      "--width": `${width}px`,
+      "--height": `${height}px`
     } as StyleValue'
   ></span>
 </template>
 
 <style lang='stylus' scoped>
 span
+  margin var(--margin)
   display inline-block
-
-.size-8
-  width 8px
-  height 8px
-
-.size-12
-  width 12px
-  height 12px
-
-.size-14
-  width 14px
-  height 14px
-
-.size-16
-  width 16px
-  height 16px
-
-.size-20
-  width 20px
-  height 20px
-
-.size-24
-  width 24px
-  height 24px
-
-.size-32
-  width 32px
-  height 32px
-
-.size-52
-  width 52px
-  height 52px
+  width var(--width)
+  height var(--height)
 </style>
 
 <style lang='stylus' scoped>
 span
   background-image url('../../assets/icons/icons.png')
+
+.slogan
+  background-position -518px -136px
+
+.top100
+  background-position -676px -136px
+
+.icp
+  background-position -809px -136px
 
 .favorite
   background-position 0 -21px
@@ -124,6 +125,42 @@ span
 
 .main-server-4
   background-position -170px -102px
+
+.services-1
+  background-position 0 -136px
+
+.services-2
+  background-position -50px -136px
+
+.services-3
+  background-position -100px -136px
+
+.services-4
+  background-position -150px -136px
+
+.services-5
+  background-position -200px -136px
+
+.services-6
+  background-position -250px -136px
+
+.services-7
+  background-position -300px -136px
+
+.services-8
+  background-position -350px -136px
+
+.city
+  background-position -26px -46px
+
+.contact
+  background-position -330px -72px
+
+.beian
+  background-position -360px -72px
+
+.qrcode
+  background url('../../assets/icons/qr-code.png')
 
 .customer
   background url('../../assets/icons/icon-mq-round@2x.png') 0px -3px / 64px no-repeat

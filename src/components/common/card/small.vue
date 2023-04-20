@@ -12,6 +12,7 @@ defineProps<{
 <template>
   <a :href='data.url'>
     <img
+      loading='lazy'
       :style='{
         "--width": imageWidth,
         "--height": imggeHeight

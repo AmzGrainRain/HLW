@@ -1,11 +1,11 @@
 <script lang='ts' setup>
 import Icons from '../common/icons.vue'
 import BoxHead from './box-head.vue'
-import Card from '../common/card/goods.vue'
+import ProductCard from '../common/card/goods.vue'
 import { assumeFile } from '../../utils'
-import { Data } from '../../types/floor-box'
+import { DataType } from '../../types/container/flower'
 
-defineProps<{ readonly data: Data }>()
+defineProps<{ readonly data: DataType }>()
 </script>
 
 <template>
@@ -14,7 +14,7 @@ defineProps<{ readonly data: Data }>()
 
     <div class='content'>
       <div class='banner'>
-        <img :src='assumeFile(data.banner.image) as string' :alt='data.banner.alt'>
+        <img loading='lazy' :src='assumeFile(data.banner.image) as string' :alt='data.banner.alt'>
         <div class='mask'></div>
         <a :href='data.banner.url'>
           <span>{{ data.banner.text }}</span>
@@ -23,7 +23,7 @@ defineProps<{ readonly data: Data }>()
       </div>
       <ul>
         <li v-for='(item, index) in data.list' :key='index'>
-          <Card
+          <ProductCard
             :head="{
               image: item.image,
               alt: item.title,

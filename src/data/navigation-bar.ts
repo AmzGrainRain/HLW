@@ -144,7 +144,7 @@ const category: Array<Category> = [
           {
             text: '幸福西饼蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/01.png',
+            image: 'cake-brand/01.png',
             alt: '幸福西饼蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -152,7 +152,7 @@ const category: Array<Category> = [
           {
             text: '元祖蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/02.png',
+            image: 'cake-brand/02.png',
             alt: '元祖蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -160,7 +160,7 @@ const category: Array<Category> = [
           {
             text: '诺心蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/03.png',
+            image: 'cake-brand/03.png',
             alt: '诺心蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -168,7 +168,7 @@ const category: Array<Category> = [
           {
             text: 'cakeboss蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/04.png',
+            image: 'cake-brand/04.png',
             alt: 'cakeboss蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -176,7 +176,7 @@ const category: Array<Category> = [
           {
             text: '21CAKE蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/05.png',
+            image: 'cake-brand/05.png',
             alt: '21CAKE蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -184,7 +184,7 @@ const category: Array<Category> = [
           {
             text: 'FALANCCAKE蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/06.png',
+            image: 'cake-brand/06.png',
             alt: 'FALANCCAKE蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -192,7 +192,7 @@ const category: Array<Category> = [
           {
             text: 'BeDream蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/07.png',
+            image: 'cake-brand/07.png',
             alt: 'BeDream蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -200,7 +200,7 @@ const category: Array<Category> = [
           {
             text: '窝夫小子蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/08.png',
+            image: 'cake-brand/08.png',
             alt: '窝夫小子蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -208,7 +208,7 @@ const category: Array<Category> = [
           {
             text: '派悦坊蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/09.png',
+            image: 'cake-brand/09.png',
             alt: '派悦坊蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -216,7 +216,7 @@ const category: Array<Category> = [
           {
             text: 'Mcake蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/10.png',
+            image: 'cake-brand/10.png',
             alt: 'Mcake蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -224,7 +224,7 @@ const category: Array<Category> = [
           {
             text: '巴黎贝甜蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/11.png',
+            image: 'cake-brand/11.png',
             alt: '巴黎贝甜蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -232,7 +232,7 @@ const category: Array<Category> = [
           {
             text: '心之和蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/12.png',
+            image: 'cake-brand/12.png',
             alt: '心之和蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -240,7 +240,7 @@ const category: Array<Category> = [
           {
             text: '米卡米蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/13.png',
+            image: 'cake-brand/13.png',
             alt: '米卡米蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -248,7 +248,7 @@ const category: Array<Category> = [
           {
             text: '四季榴莲蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/14.png',
+            image: 'cake-brand/14.png',
             alt: '四季榴莲蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -256,7 +256,7 @@ const category: Array<Category> = [
           {
             text: 'Vcake蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/15.png',
+            image: 'cake-brand/15.png',
             alt: 'Vcake蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -264,7 +264,7 @@ const category: Array<Category> = [
           {
             text: 'cakeonly专爱蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/16.png',
+            image: 'cake-brand/16.png',
             alt: 'cakeonly专爱蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -272,7 +272,7 @@ const category: Array<Category> = [
           {
             text: '哈根达斯蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/17.png',
+            image: 'cake-brand/17.png',
             alt: '哈根达斯蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -280,7 +280,7 @@ const category: Array<Category> = [
           {
             text: '全国蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/18.png',
+            image: 'cake-brand/18.png',
             alt: '全国蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -288,7 +288,7 @@ const category: Array<Category> = [
           {
             text: '意然蛋糕',
             url: '#',
-            image: 'navigation-bar/cake/19.png',
+            image: 'cake-brand/19.png',
             alt: '意然蛋糕',
             imageWidth: '108px',
             imageHeight: '60px'
@@ -353,42 +353,42 @@ const category: Array<Category> = [
           {
             text: '施华洛士奇',
             url: '#',
-            image: 'navigation-bar/other/brand/01.png',
+            image: 'gift-brand/01.png',
             alt: '施华洛士奇',
-            imageWidth: '68px',
-            imageHeight: '68px'
+            imageWidth: '116px',
+            imageHeight: '64px'
           },
           {
             text: 'Glam Ever潮牌饰品',
             url: '#',
-            image: 'navigation-bar/other/brand/02.png',
+            image: 'gift-brand/02.png',
             alt: 'Glam Ever潮牌饰品',
-            imageWidth: '68px',
-            imageHeight: '68px'
+            imageWidth: '116px',
+            imageHeight: '64px'
           },
           {
             text: '迪奥Dior',
             url: '#',
-            image: 'navigation-bar/other/brand/03.png',
+            image: 'gift-brand/03.png',
             alt: '迪奥Dior',
-            imageWidth: '68px',
-            imageHeight: '68px'
+            imageWidth: '116px',
+            imageHeight: '64px'
           },
           {
             text: '猫王收音机',
             url: '#',
-            image: 'navigation-bar/other/brand/04.png',
+            image: 'gift-brand/04.png',
             alt: '猫王收音机',
-            imageWidth: '68px',
-            imageHeight: '68px'
+            imageWidth: '116px',
+            imageHeight: '64px'
           },
           {
             text: 'Hello Kitty',
             url: '#',
-            image: 'navigation-bar/other/brand/05.png',
+            image: 'gift-brand/05.png',
             alt: 'Hello Kitty',
-            imageWidth: '68px',
-            imageHeight: '68px'
+            imageWidth: '116px',
+            imageHeight: '64px'
           }
         ]
       },

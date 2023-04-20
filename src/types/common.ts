@@ -14,9 +14,15 @@ interface ImageLink extends Image {
 
 interface ImageTextLink extends Link, Image {}
 
+interface User {
+  readonly name: string
+  readonly avator: string
+}
+
 export type {
   Link,
   Image,
   ImageLink,
-  ImageTextLink
+  ImageTextLink,
+  User
 }

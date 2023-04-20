@@ -14,7 +14,7 @@ defineProps<{ readonly listData: ListData }>()
         :href='item.url'
         :key='iIndex'
       >
-        <img :src='assumeFile(item.image) as string' :alt='item.alt'>
+        <img loading='lazy' :src='assumeFile(item.image) as string' :alt='item.alt'>
       </a>
 
       <div v-if='type.cardStyle === "three"'>
@@ -23,7 +23,7 @@ defineProps<{ readonly listData: ListData }>()
           :href='item.url'
           :key='iIndex'
         >
-          <img :src='assumeFile(item.image) as string' :alt='item.alt'>
+          <img loading='lazy' :src='assumeFile(item.image) as string' :alt='item.alt'>
         </a>
       </div>
       <a
@@ -31,7 +31,7 @@ defineProps<{ readonly listData: ListData }>()
         :href='item.url'
         :key='iIndex'
       >
-        <img :src='assumeFile(item.image) as string' :alt='item.alt'>
+        <img loading='lazy' :src='assumeFile(item.image) as string' :alt='item.alt'>
       </a>
     </li>
   </ul>

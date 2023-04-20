@@ -1,6 +1,6 @@
-import { Data } from '../types/floor-box'
+import { DataType } from '../../types/container/flower'
 
-const floorBoxData: Data[] = [
+const flowerBoxData: DataType[] = [
   {
     title: {
       text: '爱情鲜花',
@@ -253,5 +253,5 @@ const floorBoxData: Data[] = [
 ]
 
 export {
-  floorBoxData
+  flowerBoxData
 }

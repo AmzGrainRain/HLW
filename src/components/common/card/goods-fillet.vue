@@ -18,7 +18,7 @@ withDefaults(defineProps<Props>(), {
   <a :style="{ '--fillet': `${fillet}px` }" :href="head.url">
     <div class="box">
       <div class="img-box">
-        <img :src="assumeFile(head.image) as string" :alt="head.alt" />
+        <img loading='lazy' :src="assumeFile(head.image) as string" :alt="head.alt" />
       </div>
       <div class='info'>
         <p class="text-overflow-ellipsis" :title="info.title">
@@ -36,7 +36,7 @@ withDefaults(defineProps<Props>(), {
 a
   display inline-block
   width 100%
-  border-radius var(--fillet)
+  border-radius calc(2 * var(--fillet))
   background-color #fff
 
   &:hover
@@ -46,7 +46,9 @@ a
     transform scale(1.05)
 
   div.box
+    padding 8px
     border-radius var(--fillet)
+    box-sizing border-box
     overflow hidden
 
   div.img-box

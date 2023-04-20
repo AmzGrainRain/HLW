@@ -21,6 +21,7 @@ div
   align-items center
   background-color #ff6600
   cursor pointer
+  z-index 999
   span
     font-size 16px
     font-weight normal
